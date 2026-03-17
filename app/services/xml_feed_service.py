@@ -256,11 +256,11 @@ class XMLFeedService:
         if product.image_url:
             # Handle relative URLs
             if product.image_url.startswith('/'):
-                return f"https://carre-sport-production.up.railway.app{product.image_url}"
+                return f"https://projects-backend.mlqyyh.easypanel.host{product.image_url}"
             elif product.image_url.startswith('http'):
                 return product.image_url
             else:
-                return f"https://carre-sport-production.up.railway.app/uploads/products/{product.image_url}"
+                return f"https://projects-backend.mlqyyh.easypanel.host/uploads/products/{product.image_url}"
         
         # Fallback to default image
         return f"{self.base_url}/images/products/placeholder.jpg"

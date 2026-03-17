@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     
     # CORS
-    BACKEND_CORS_ORIGINS: Union[str, List[str]] = config("BACKEND_CORS_ORIGINS", default="http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:8080,https://carre-sport.vercel.app,https://carre-sport-production.up.railway.app")
+    BACKEND_CORS_ORIGINS: Union[str, List[str]] = config("BACKEND_CORS_ORIGINS", default="http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:8080,https://projects-second.mlqyyh.easypanel.host,https://projects-backend.mlqyyh.easypanel.host")
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
     def assemble_cors_origins(cls, v: Union[str, List[str]]) -> Union[List[str], str]:

@@ -45,7 +45,7 @@ settings.delete_by_category_and_key(db, category="store", key="store_logo_url")
 
 #### 2. Consistent URL Handling
 All components now use `getImageUrl()` utility which converts:
-- `/uploads/logos/logo_uuid.png` → `https://carre-sport-production.up.railway.app/uploads/logos/logo_uuid.png`
+- `/uploads/logos/logo_uuid.png` → `https://projects-backend.mlqyyh.easypanel.host/uploads/logos/logo_uuid.png`
 
 ## 🧪 **Testing & Verification**
 

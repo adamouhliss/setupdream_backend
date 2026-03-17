@@ -29,9 +29,9 @@ COPY . .
 RUN mkdir -p uploads
 
 # Expose port
-EXPOSE 8000
+EXPOSE 80
 
 # Healthcheck removed to prevent orchestrator conflicts
 
 # Run the application
-CMD ["bash", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000} --timeout-keep-alive 30"] 
+CMD ["bash", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 80 --timeout-keep-alive 30"] 

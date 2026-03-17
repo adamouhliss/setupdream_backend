@@ -10,7 +10,7 @@ BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
 FRONTEND_PUBLIC_DIR = os.path.join(os.path.dirname(BACKEND_DIR), 'frontend', 'public')
 ASSETS_DIR = os.path.join(FRONTEND_PUBLIC_DIR, 'brand-assets')
 LOGO_ZIP_PATH = os.path.join(ASSETS_DIR, 'logo-pack.zip')
-API_URL = "https://carre-sport-production.up.railway.app/api/v1/settings/store/public"
+API_URL = "https://projects-backend.mlqyyh.easypanel.host/api/v1/settings/store/public"
 
 # Ensure assets dir exists
 os.makedirs(ASSETS_DIR, exist_ok=True)
@@ -41,7 +41,7 @@ def fetch_and_zip_logo():
              # Ensure leading slash
              if not logo_url_suffix.startswith('/'):
                  logo_url_suffix = '/' + logo_url_suffix
-             logo_url = f"https://carre-sport-production.up.railway.app{logo_url_suffix}"
+             logo_url = f"https://projects-backend.mlqyyh.easypanel.host{logo_url_suffix}"
              
         print(f"Full Logo URL: {logo_url}")
         

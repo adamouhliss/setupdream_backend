@@ -1,0 +1,2 @@
+After PostgreSQL is running, execute:
+python migrate_to_postgres.py

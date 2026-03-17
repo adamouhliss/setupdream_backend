@@ -1,0 +1,24 @@
+
+==================================================
+Timestamp: 2025-07-13 00:41:20
+To: +212632253960
+Message:
+🎉 *NEW ORDER RECEIVED!*
+
+📋 *Order #999*
+👤 Customer: Test Customer
+📞 Phone: +212612345678
+📍 City: Casablanca
+
+🛍️ *Items (1):*
+1. Test Product (x1) - Blue - Size: M
+
+💰 *Total: 299.99 MAD*
+
+⏰ Order placed: 13/07/2025 at 00:41
+
+🚚 Please contact the customer to confirm delivery details.
+
+---
+Carré Sports - Order Management
+==================================================

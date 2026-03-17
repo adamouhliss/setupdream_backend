@@ -1,0 +1,10 @@
+After installing PostgreSQL, run these commands in Command Prompt:
+
+# Connect to PostgreSQL
+psql -U postgres -h localhost
+
+# Create database
+CREATE DATABASE carre_sports;
+
+# Exit psql
+\q

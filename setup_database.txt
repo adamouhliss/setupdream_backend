@@ -1,0 +1,27 @@
+Database Setup Instructions for Carré Sports
+=============================================
+
+Your PostgreSQL database configuration:
+- Host: localhost
+- Port: 5432
+- User: postgres
+- Password: ChatBot123!
+- Database: carresport
+
+To set up the database connection:
+
+1. Create a .env file in the backend directory with:
+   DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/carresport
+
+2. Or set the environment variable directly:
+   - Windows PowerShell: $env:DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/carresport"
+   - Windows CMD: set DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/carresport
+   - macOS/Linux: export DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/carresport"
+
+3. Run the migration script:
+   python migrate_to_postgres.py
+
+4. Start your FastAPI server:
+   python -m uvicorn app.main:app --reload
+
+Note: The migration script has been updated to use your database name "carresport" 

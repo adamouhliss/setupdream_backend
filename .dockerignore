@@ -1,0 +1,47 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Development files
+migrate_to_postgres.py
+create_sample_products.py
+create_demo_user.py
+add_first_time_discount_field.py
+setup_database.txt
+run_migration.txt
+postgres_setup_instructions.txt
+
+# Alembic (for now)
+alembic/
+alembic.ini
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.dockerignore
+
+# Logs
+*.log 

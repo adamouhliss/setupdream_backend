@@ -31,22 +31,14 @@ app = FastAPI(
 )
 
 # Set all CORS enabled origins
+origins = settings.BACKEND_CORS_ORIGINS
+if isinstance(origins, str):
+    # In case the validator was bypassed by decouple
+    origins = [i.strip() for i in origins.split(",") if i.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:5173", 
-        "http://localhost:5174",
-        "http://localhost:8080",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:5174",
-        "http://127.0.0.1:8080",
-        "https://carre-sport.vercel.app",  # Production frontend
-        "https://carre-sport-production.up.railway.app",  # Production backend
-        "https://carresports.ma",
-        "https://www.carresports.ma",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],

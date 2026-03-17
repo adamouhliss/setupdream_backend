@@ -12,6 +12,12 @@ class Settings(BaseSettings):
     # Database - PostgreSQL (Railway)
     DATABASE_URL: str = config("DATABASE_URL", default="postgresql://postgres:LwvemmnYzpTiNrJTCateqWzZfDaYDbue@yamabiko.proxy.rlwy.net:48809/railway")
     
+    @validator("DATABASE_URL", pre=True)
+    def assemble_db_connection(cls, v: str) -> str:
+        if isinstance(v, str) and v.startswith("postgres://"):
+            return v.replace("postgres://", "postgresql://", 1)
+        return v
+    
     # CORS
     BACKEND_CORS_ORIGINS: Union[str, List[str]] = config("BACKEND_CORS_ORIGINS", default="http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:8080,https://carre-sport.vercel.app,https://carre-sport-production.up.railway.app")
 

@@ -32,15 +32,31 @@ app = FastAPI(
 
 # Set all CORS enabled origins
 origins = settings.BACKEND_CORS_ORIGINS
+print(f"RAW CORS ORIGINS FROM SETTINGS: {origins}")
+
 if isinstance(origins, str):
     # In case the validator was bypassed by decouple
     origins = [i.strip() for i in origins.split(",") if i.strip()]
+
+elif not isinstance(origins, list):
+    origins = list(origins)
+
+# Add specific known frontends to be safe
+safe_origins = [
+    "http://localhost:3000",
+    "https://projects-second.mlqyyh.easypanel.host",
+]
+for o in safe_origins:
+    if o not in origins:
+        origins.append(o)
+
+print(f"FINAL CORS LIST USED BY MIDDLEWARE: {origins}")
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 

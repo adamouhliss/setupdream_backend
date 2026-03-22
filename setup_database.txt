@@ -1,4 +1,4 @@
-Database Setup Instructions for Setup dreams
+Database Setup Instructions for Setup dream
 =============================================
 
 Your PostgreSQL database configuration:

@@ -24,7 +24,7 @@ class Settings(BaseSettings):
             return v
         raise ValueError(v)
 
-    PROJECT_NAME: str = "Setup dreams API"
+    PROJECT_NAME: str = "Setup dream API"
     
     # Email
     SMTP_TLS: bool = True

@@ -72,7 +72,7 @@ In **Twilio Console → Account → API keys & tokens**:
 🚚 Contactez le client pour confirmer.
 
 ---
-Setup dreams
+Setup dream
 ```
 
 ## ✅ Step 5: Test Your Setup

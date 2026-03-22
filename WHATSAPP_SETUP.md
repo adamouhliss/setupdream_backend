@@ -102,7 +102,7 @@ The notification includes:
 🚚 Please contact the customer to confirm delivery details.
 
 ---
-Setup dreams - Order Management
+Setup dream - Order Management
 ```
 
 ## Troubleshooting

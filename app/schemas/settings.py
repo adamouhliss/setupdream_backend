@@ -3,7 +3,7 @@ from pydantic import BaseModel, EmailStr
 
 
 class StoreSettings(BaseModel):
-    store_name: str = "Setup dreams"
+    store_name: str = "Setup dream"
     store_description: str = "Carrément sport"
     store_logo_url: Optional[str] = None
     store_favicon_url: Optional[str] = None
@@ -45,7 +45,7 @@ class EmailSettings(BaseModel):
     smtp_password: str = ""
     smtp_use_tls: bool = True
     from_email: EmailStr = "noreply@setupdream.ma"
-    from_name: str = "Setup dreams"
+    from_name: str = "Setup dream"
     enable_order_notifications: bool = True
     enable_low_stock_alerts: bool = True
     enable_welcome_emails: bool = True

@@ -87,7 +87,7 @@
 
 1. **Open Telegram** and message `@BotFather`
 2. **Create bot**: Send `/newbot`
-3. **Choose name**: `setup dream Bot`
+3. **Choose name**: `Setup dream Bot`
 4. **Choose username**: `carre_sports_orders_bot`
 5. **Save token**: `123456789:ABCdef1234567890`
 
@@ -108,7 +108,7 @@
    ```json
    {
      "chat_id": "YOUR_CHAT_ID",
-     "text": "🎉 *NOUVELLE COMMANDE!*\n\n📋 Commande #{{1.id}}\n👤 {{1.first_name}} {{1.last_name}}\n📞 {{1.phone}}\n📍 {{1.city}}\n\n🛍️ Articles:\n{{1.items}}\n\n💰 *Total: {{1.total}} MAD*\n\n⏰ {{1.created_at}}\n\n---\nSetup dreams",
+     "text": "🎉 *NOUVELLE COMMANDE!*\n\n📋 Commande #{{1.id}}\n👤 {{1.first_name}} {{1.last_name}}\n📞 {{1.phone}}\n📍 {{1.city}}\n\n🛍️ Articles:\n{{1.items}}\n\n💰 *Total: {{1.total}} MAD*\n\n⏰ {{1.created_at}}\n\n---\nSetup dream",
      "parse_mode": "Markdown"
    }
    ```

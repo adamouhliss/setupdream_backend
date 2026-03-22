@@ -81,7 +81,7 @@ In the WhatsApp module, configure:
 🚚 Please contact customer to confirm delivery.
 
 ---
-Setup dreams - Order Management
+Setup dream - Order Management
 ```
 
 #### 4.2 Advanced Message Formatting (Optional)

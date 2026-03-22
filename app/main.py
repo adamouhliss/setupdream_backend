@@ -94,7 +94,7 @@ app.include_router(influencers_router, prefix=f"{settings.API_V1_STR}/influencer
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Setup dreams API", "version": "1.0.1"}
+    return {"message": "Welcome to Setup dream API", "version": "1.0.1"}
 
 @app.get("/health")
 async def health_check():

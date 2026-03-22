@@ -108,7 +108,7 @@
    ```json
    {
      "chat_id": "YOUR_CHAT_ID",
-     "text": "🎉 *NOUVELLE COMMANDE!*\n\n📋 Commande #{{1.id}}\n👤 {{1.first_name}} {{1.last_name}}\n📞 {{1.phone}}\n📍 {{1.city}}\n\n🛍️ Articles:\n{{1.items}}\n\n💰 *Total: {{1.total}} MAD*\n\n⏰ {{1.created_at}}\n\n---\nCarré Sports",
+     "text": "🎉 *NOUVELLE COMMANDE!*\n\n📋 Commande #{{1.id}}\n👤 {{1.first_name}} {{1.last_name}}\n📞 {{1.phone}}\n📍 {{1.city}}\n\n🛍️ Articles:\n{{1.items}}\n\n💰 *Total: {{1.total}} MAD*\n\n⏰ {{1.created_at}}\n\n---\nSetup dreams",
      "parse_mode": "Markdown"
    }
    ```

@@ -1,5 +1,5 @@
 """
-Migration script to set up PostgreSQL database for Carré Sports
+Migration script to set up PostgreSQL database for Setup dreams
 Run this after PostgreSQL is installed and running
 """
 import os
@@ -12,7 +12,7 @@ from alembic import command
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 # Use the correct database URL for the user's setup
-DATABASE_URL = "postgresql://postgres:ChatBot123!@localhost:5432/carresport"
+DATABASE_URL = "postgresql://postgres:ChatBot123!@localhost:5432/setupdream"
 
 from app.core.database import Base
 
@@ -134,7 +134,7 @@ def migrate_data_from_sqlite():
 
 def main():
     """Main migration function"""
-    print("🐘 Carré Sports PostgreSQL Migration")
+    print("🐘 Setup dreams PostgreSQL Migration")
     print("=" * 40)
     
     # Step 1: Check PostgreSQL connection
@@ -142,7 +142,7 @@ def main():
         print("\n❌ Migration failed: Cannot connect to PostgreSQL")
         print("\n🔧 Please ensure:")
         print("   1. PostgreSQL is installed and running")
-        print("   2. Database 'carresport' exists")
+        print("   2. Database 'setupdream' exists")
         print("   3. Connection details are correct")
         return False
     
@@ -161,7 +161,7 @@ def main():
     
     print("\n🎉 PostgreSQL migration completed successfully!")
     print("\n📋 Next steps:")
-    print("   1. Set DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/carresport in your environment")
+    print("   1. Set DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/setupdream in your environment")
     print("   2. Start your FastAPI server: python -m uvicorn app.main:app --reload")
     print("   3. Create admin user if needed")
     print("   4. Add sample products")

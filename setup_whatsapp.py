@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-WhatsApp Notification Setup for Carré Sports
+WhatsApp Notification Setup for Setup dreams
 ============================================
 
 This script helps you set up WhatsApp notifications for new orders.
@@ -63,7 +63,7 @@ def create_env_file():
     
     # Write updated .env file
     with open(env_file, 'w') as f:
-        f.write("# Carré Sports Environment Configuration\n")
+        f.write("# Setup dreams Environment Configuration\n")
         f.write("# =====================================\n\n")
         
         # Database config
@@ -174,7 +174,7 @@ def install_dependencies():
 
 def main():
     """Main setup function"""
-    print("🎉 Welcome to Carré Sports WhatsApp Setup!")
+    print("🎉 Welcome to Setup dreams WhatsApp Setup!")
     print("=" * 45)
     
     print("\nThis script will help you configure WhatsApp notifications")

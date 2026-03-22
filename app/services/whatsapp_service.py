@@ -84,7 +84,7 @@ class WhatsAppService:
 🚚 Please contact the customer to confirm delivery details.
 
 ---
-Carré Sports - Order Management"""
+Setup dreams - Order Management"""
             
             return message
             

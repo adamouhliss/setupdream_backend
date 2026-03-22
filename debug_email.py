@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Advanced email debugging for Carré Sports contact form
+Advanced email debugging for Setup dreams contact form
 """
 import smtplib
 import ssl
@@ -63,8 +63,8 @@ def test_smtp_connection():
         # Test 5: Send simple email
         print(f"📧 Sending test email...")
         
-        msg = MIMEText("This is a simple test email from Carré Sports contact form debugging.", "plain", "utf-8")
-        msg["Subject"] = "🔧 SMTP Debug Test - Carré Sports"
+        msg = MIMEText("This is a simple test email from Setup dreams contact form debugging.", "plain", "utf-8")
+        msg["Subject"] = "🔧 SMTP Debug Test - Setup dreams"
         msg["From"] = FROM_EMAIL
         msg["To"] = TO_EMAIL
         
@@ -141,7 +141,7 @@ def test_alternative_smtp_settings():
     return None
 
 if __name__ == "__main__":
-    print("🧪 ADVANCED EMAIL DEBUGGING - Carré Sports")
+    print("🧪 ADVANCED EMAIL DEBUGGING - Setup dreams")
     print("=" * 60)
     
     # Test current configuration

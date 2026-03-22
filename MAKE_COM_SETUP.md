@@ -81,7 +81,7 @@ In the WhatsApp module, configure:
 🚚 Please contact customer to confirm delivery.
 
 ---
-Carré Sports - Order Management
+Setup dreams - Order Management
 ```
 
 #### 4.2 Advanced Message Formatting (Optional)

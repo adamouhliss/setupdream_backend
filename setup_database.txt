@@ -1,4 +1,4 @@
-Database Setup Instructions for Carré Sports
+Database Setup Instructions for Setup dreams
 =============================================
 
 Your PostgreSQL database configuration:
@@ -6,17 +6,17 @@ Your PostgreSQL database configuration:
 - Port: 5432
 - User: postgres
 - Password: ChatBot123!
-- Database: carresport
+- Database: setupdream
 
 To set up the database connection:
 
 1. Create a .env file in the backend directory with:
-   DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/carresport
+   DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/setupdream
 
 2. Or set the environment variable directly:
-   - Windows PowerShell: $env:DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/carresport"
-   - Windows CMD: set DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/carresport
-   - macOS/Linux: export DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/carresport"
+   - Windows PowerShell: $env:DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/setupdream"
+   - Windows CMD: set DATABASE_URL=postgresql://postgres:ChatBot123!@localhost:5432/setupdream
+   - macOS/Linux: export DATABASE_URL="postgresql://postgres:ChatBot123!@localhost:5432/setupdream"
 
 3. Run the migration script:
    python migrate_to_postgres.py
@@ -24,4 +24,4 @@ To set up the database connection:
 4. Start your FastAPI server:
    python -m uvicorn app.main:app --reload
 
-Note: The migration script has been updated to use your database name "carresport" 
+Note: The migration script has been updated to use your database name "setupdream" 

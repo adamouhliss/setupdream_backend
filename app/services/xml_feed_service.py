@@ -25,7 +25,7 @@ class XMLFeedService:
         channel = SubElement(rss, "channel")
         
         # Channel info
-        SubElement(channel, "title").text = "Carré Sport - Équipements Sportifs Premium"
+        SubElement(channel, "title").text = "Setup dream - Équipements Sportifs Premium"
         SubElement(channel, "description").text = "Découvrez notre collection premium d'équipements sportifs au Maroc"
         SubElement(channel, "link").text = self.base_url
         
@@ -54,8 +54,8 @@ class XMLFeedService:
         channel = SubElement(rss, "channel")
         
         # Channel info
-        SubElement(channel, "title").text = "Carré Sport - Google Shopping Feed"
-        SubElement(channel, "description").text = "Produits Carré Sport pour Google Shopping"
+        SubElement(channel, "title").text = "Setup dream - Google Shopping Feed"
+        SubElement(channel, "description").text = "Produits Setup dream pour Google Shopping"
         SubElement(channel, "link").text = self.base_url
         
         products = self._get_products(db)
@@ -78,8 +78,8 @@ class XMLFeedService:
         
         channel = SubElement(rss, "channel")
         
-        SubElement(channel, "title").text = "Carré Sport - Facebook Catalog"
-        SubElement(channel, "description").text = "Produits Carré Sport pour Facebook Shop"
+        SubElement(channel, "title").text = "Setup dream - Facebook Catalog"
+        SubElement(channel, "description").text = "Produits Setup dream pour Facebook Shop"
         SubElement(channel, "link").text = self.base_url
         
         products = self._get_products(db)
@@ -230,7 +230,7 @@ class XMLFeedService:
     def _clean_description(self, description: str) -> str:
         """Clean and format product description"""
         if not description:
-            return "Équipement sportif de qualité premium chez Carré Sport"
+            return "Équipement sportif de qualité premium chez Setup dream"
         
         # Remove HTML tags if any
         import re

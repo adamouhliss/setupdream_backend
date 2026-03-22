@@ -87,7 +87,7 @@
 
 1. **Open Telegram** and message `@BotFather`
 2. **Create bot**: Send `/newbot`
-3. **Choose name**: `Carre Sports Bot`
+3. **Choose name**: `setup dream Bot`
 4. **Choose username**: `carre_sports_orders_bot`
 5. **Save token**: `123456789:ABCdef1234567890`
 

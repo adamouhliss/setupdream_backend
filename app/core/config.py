@@ -6,7 +6,7 @@ from decouple import config
 
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
-    SECRET_KEY: str = config("SECRET_KEY", default="carresports-super-secret-key-change-in-production")
+    SECRET_KEY: str = config("SECRET_KEY", default="setupdream-super-secret-key-change-in-production")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
     
     # Database - PostgreSQL (Railway)
@@ -44,8 +44,8 @@ class Settings(BaseSettings):
     MAX_FILE_SIZE: int = 5 * 1024 * 1024  # 5MB
 
     # Admin user
-    FIRST_SUPERUSER: EmailStr = "admin@carresports.com"
-    FIRST_SUPERUSER_PASSWORD: str = "CarreSports@2024!Admin#Secure789"
+    FIRST_SUPERUSER: EmailStr = "admin@setupdream.com"
+    FIRST_SUPERUSER_PASSWORD: str = "setupdream@2024!Admin#Secure789"
 
     class Config:
         case_sensitive = True

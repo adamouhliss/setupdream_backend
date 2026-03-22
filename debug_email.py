@@ -12,10 +12,10 @@ import socket
 # Your SMTP Configuration
 SMTP_HOST = "smtp.nindomail.com"
 SMTP_PORT = 465
-SMTP_USERNAME = "info@carresports.ma"
+SMTP_USERNAME = "info@setupdream.ma"
 SMTP_PASSWORD = "Pocadils121!@"
-FROM_EMAIL = "info@carresports.ma"
-TO_EMAIL = "info@carresports.ma"
+FROM_EMAIL = "info@setupdream.ma"
+TO_EMAIL = "info@setupdream.ma"
 
 def test_smtp_connection():
     """Test SMTP connection step by step"""

@@ -9,7 +9,7 @@ class StoreSettings(BaseModel):
     store_favicon_url: Optional[str] = None
     store_address: str = "Casablanca, Morocco"
     store_phone: str = "+212 5XX-XXXXXX"
-    store_email: EmailStr = "info@carresports.ma"
+    store_email: EmailStr = "info@setupdream.ma"
     currency: str = "MAD"
     timezone: str = "Africa/Casablanca"
     language: str = "fr"
@@ -44,7 +44,7 @@ class EmailSettings(BaseModel):
     smtp_username: str = ""
     smtp_password: str = ""
     smtp_use_tls: bool = True
-    from_email: EmailStr = "noreply@carresports.ma"
+    from_email: EmailStr = "noreply@setupdream.ma"
     from_name: str = "Carré Sports"
     enable_order_notifications: bool = True
     enable_low_stock_alerts: bool = True

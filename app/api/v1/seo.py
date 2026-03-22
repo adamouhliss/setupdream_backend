@@ -9,7 +9,7 @@ from ...crud.product import product_crud, category_crud
 
 router = APIRouter()
 
-FRONTEND_URL = "https://www.carresports.ma"
+FRONTEND_URL = "https://www.setupdream.ma"
 
 import os
 from ...core.config import settings

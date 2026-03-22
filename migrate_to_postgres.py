@@ -1,5 +1,5 @@
 """
-Migration script to set up PostgreSQL database for Carré Sports
+Migration script to set up PostgreSQL database for Setup Dream
 Run this after PostgreSQL is installed and running
 """
 import os
@@ -134,7 +134,7 @@ def migrate_data_from_sqlite():
 
 def main():
     """Main migration function"""
-    print("🐘 Carré Sports PostgreSQL Migration")
+    print("🐘 Setup Dream PostgreSQL Migration")
     print("=" * 40)
     
     # Step 1: Check PostgreSQL connection

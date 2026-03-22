@@ -75,7 +75,7 @@ def test_webhook():
         return False
 
 if __name__ == "__main__":
-    print("🎯 Carré Sports - Webhook Tester")
+    print("🎯 Setup Dream - Webhook Tester")
     print("=" * 35)
     print()
     

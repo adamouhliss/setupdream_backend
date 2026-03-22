@@ -32,7 +32,7 @@ def get_store_settings(db: Session) -> StoreSettings:
 # SMTP Configuration (will be made dynamic later)
 SMTP_HOST = "smtp.nindomail.com"
 SMTP_PORT = 465
-SMTP_USERNAME = "info@carresports.ma"
+SMTP_USERNAME = "info@Setupdream.ma"
 SMTP_PASSWORD = "Pocadils121!@"
 
 class ContactForm(BaseModel):

@@ -192,7 +192,7 @@ def test_email_connection(
         msg = MIMEMultipart()
         msg['From'] = f"{email_config.from_name} <{email_config.from_email}>"
         msg['To'] = current_user.email
-        msg['Subject'] = "Carré Sports - Email Configuration Test"
+        msg['Subject'] = "Setup Dream - Email Configuration Test"
         
         body = f"""
         <html>
@@ -202,7 +202,7 @@ def test_email_connection(
             <p>This is a test email to verify your email configuration is working correctly.</p>
             <p>If you receive this email, your SMTP settings are configured properly.</p>
             <br>
-            <p>Best regards,<br>Carré Sports Team</p>
+            <p>Best regards,<br>Setup Dream Team</p>
         </body>
         </html>
         """

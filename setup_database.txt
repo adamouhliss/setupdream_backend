@@ -1,4 +1,4 @@
-Database Setup Instructions for Carré Sports
+Database Setup Instructions for Setup Dream
 =============================================
 
 Your PostgreSQL database configuration:

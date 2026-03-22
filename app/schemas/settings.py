@@ -3,13 +3,13 @@ from pydantic import BaseModel, EmailStr
 
 
 class StoreSettings(BaseModel):
-    store_name: str = "Carré Sports"
+    store_name: str = "Setup Dream"
     store_description: str = "Carrément sport"
     store_logo_url: Optional[str] = None
     store_favicon_url: Optional[str] = None
     store_address: str = "Casablanca, Morocco"
     store_phone: str = "+212 5XX-XXXXXX"
-    store_email: EmailStr = "info@carresports.ma"
+    store_email: EmailStr = "info@Setupdream.ma"
     currency: str = "MAD"
     timezone: str = "Africa/Casablanca"
     language: str = "fr"
@@ -44,8 +44,8 @@ class EmailSettings(BaseModel):
     smtp_username: str = ""
     smtp_password: str = ""
     smtp_use_tls: bool = True
-    from_email: EmailStr = "noreply@carresports.ma"
-    from_name: str = "Carré Sports"
+    from_email: EmailStr = "noreply@Setupdream.ma"
+    from_name: str = "Setup Dream"
     enable_order_notifications: bool = True
     enable_low_stock_alerts: bool = True
     enable_welcome_emails: bool = True

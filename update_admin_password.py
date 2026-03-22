@@ -55,7 +55,7 @@ def update_admin_password():
                 email=settings.FIRST_SUPERUSER,
                 password=settings.FIRST_SUPERUSER_PASSWORD,
                 first_name="Admin",
-                last_name="Carré Sports",
+                last_name="Setup Dream",
                 is_active=True,
                 is_superuser=True,
                 is_verified=True

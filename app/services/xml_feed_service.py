@@ -9,7 +9,7 @@ from ..crud.product import CRUDProduct
 product_crud = CRUDProduct()
 
 class XMLFeedService:
-    def __init__(self, base_url: str = "https://www.carresports.ma"):
+    def __init__(self, base_url: str = "https://www.Setupdream.ma"):
         self.base_url = base_url.rstrip('/')
     
     def generate_product_feed(self, db: Session, include_inactive: bool = False) -> str:
